@@ -1,19 +1,24 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const newMessage = {
-    message: 'Hola mundo',
-    tittle: 'Francisco'
-}
+export const FirstApp = ({ title, subtitle, name }) => {
 
-const getResult = (a, b) => {
-    return a+b;
-}
-
-export const FirstApp = () => {
     return (
         <>
-            <h1>{ getResult(1,10) }</h1>
-            <p>Soy un subtitulo</p>
+            <h1>{ title }</h1>
+            <p>{ subtitle }</p>
+            <p>{ name }</p>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.number
+}
+
+FirstApp.defaultProps = {
+    name: 'Francisco Muñoz-Reja Arias',
+    subtitle: 'No hay subtítulo',
+    title: 'No hay título',
 }
