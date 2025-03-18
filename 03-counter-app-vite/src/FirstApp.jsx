@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import checkPropTypes from 'prop-types/checkPropTypes';
 
-export const FirstApp = ({ title, subtitle, name }) => {
-
+export const FirstApp = ({ title='No hay título', subtitle='No hay subtítulo', name='Francisco Muñoz-Reja Arias' }) => {
+    checkPropTypes(FirstApp.propTypes, { title, subtitle, name }, 'prop', 'FirstApp');
     return (
         <>
             <h1>{ title }</h1>
@@ -14,11 +15,11 @@ export const FirstApp = ({ title, subtitle, name }) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number
+    subtitle: PropTypes.string.isRequired
 }
 
-FirstApp.defaultProps = {
-    name: 'Francisco Muñoz-Reja Arias',
-    subtitle: 'No hay subtítulo',
-    title: 'No hay título',
-}
+// FirstApp.defaultProps = {
+//     name: 'Francisco Muñoz-Reja Arias',
+//     subtitle: 'No hay subtítulo',
+//     title: 'No hay título',
+// }
