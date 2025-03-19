@@ -6,7 +6,7 @@ export const FirstApp = ({ title='No hay título', subtitle='No hay subtítulo',
     checkPropTypes(FirstApp.propTypes, { title, subtitle, name }, 'prop', 'FirstApp');
     return (
         <>
-            <h1>{ title }</h1>
+            <h1 data-testid="test-title">{ title }</h1>
             <p>{ subtitle }</p>
             <p>{ name }</p>
         </>
