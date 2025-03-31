@@ -18,7 +18,7 @@ Curso React de Fernando Herrera
 1. Instalaciones:
 ```
 yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react 
-yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
+yarn add --dev @testing-library/react @types/jest @testing-library/dom jest-environment-jsdom
 ```
 
 2. Opcional: Si usamos Fetch API en el proyecto:
