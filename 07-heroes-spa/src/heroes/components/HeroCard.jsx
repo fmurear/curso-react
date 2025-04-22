@@ -12,7 +12,7 @@ export const HeroCard = ({ id,
     const characterByHero = (<p>{ characters }</p>);
 
     return (
-        <div className="col  animate__animate animate__fadeIn">
+        <div className="col animate__animated animate__fadeIn">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
